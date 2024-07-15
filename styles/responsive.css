@@ -14,6 +14,12 @@
 span {
     color: red;
 }
+.span-2 {
+    color: rgb(8, 8, 8);
+}
+.span-3 {
+    color: #ff900e;
+}
 .btn-primary {
     background-color: #ff900e;
     color: white;
@@ -24,6 +30,22 @@ span {
     border: none;
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main> section {
+    margin-top: 130px;
+}
+.our-features {
+    margin-left: 130px;
+    max-width: 500px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    color: #727272;
+}
 /* dark 02 */
 .text-gray {
     color: #424242;
@@ -78,10 +100,24 @@ span {
     width: 100%;
 }
 
+/* Team and Feature Related Styles */
+.teams {
+    align-items: center;
+}
+.team-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
 /* Responsive Related Styles */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-link {
+    .navbar, 
+    .nav-link,
+    .teams {
         flex-direction: column;
     }
-    
+    .team-image-container {
+        grid-template-columns:repeat(1, 1fr);
+    }   
 }
