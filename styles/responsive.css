@@ -11,9 +11,9 @@
 .display-flex {
     display: flex;
 }
-span {
-    color: red;
-}
+/* span {
+    color: #ff900e;
+} */
 .span-2 {
     color: rgb(8, 8, 8);
 }
@@ -43,6 +43,10 @@ main> section {
 }
 
 .feature-title {
+    font-size: 2.8rem;
+    color: #727272;
+}
+.fact-section {
     font-size: 2.8rem;
     color: #727272;
 }
@@ -120,4 +124,12 @@ main> section {
     .team-image-container {
         grid-template-columns:repeat(1, 1fr);
     }   
+}
+
+/* medium size device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams {
+        flex-direction: column;
+    }
+    
 }
