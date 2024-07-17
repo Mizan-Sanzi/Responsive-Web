@@ -30,26 +30,6 @@
     border: none;
 }
 
-main {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-main> section {
-    margin-top: 130px;
-}
-.our-features {
-    margin-left: 130px;
-    max-width: 500px;
-}
-
-.feature-title {
-    font-size: 2.8rem;
-    color: #727272;
-}
-.fact-section {
-    font-size: 2.8rem;
-    color: #727272;
-}
 /* dark 02 */
 .text-gray {
     color: #424242;
@@ -114,6 +94,81 @@ main> section {
     gap: 24px;
 }
 
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main> section {
+    margin-top: 130px;
+}
+.our-features {
+    margin-left: 130px;
+    max-width: 500px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    color: #727272;
+}
+/* fact related style */
+
+.fact-section {
+    display: flex;
+    font-size: 2.8rem;
+    color: #727272;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.fact-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+.fact-card {
+    border: 1px solid #ff900e;
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.fact-number {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.fact-description {
+    display: flex;
+    max-width: 950px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* Sponsors related styles */
+.sponsors-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 /* Responsive Related Styles */
 @media screen and (max-width: 576px) {
     .navbar, 
@@ -121,10 +176,14 @@ main> section {
     .teams {
         flex-direction: column;
     }
-    .team-image-container {
+    .team-image-container, .fact-container {
         grid-template-columns:repeat(1, 1fr);
     }   
+    .fact-container {
+        gap: 24px;
+    }
 }
+
 
 /* medium size device */
 @media screen and (min-width:576px) and (max-width:992px) {
